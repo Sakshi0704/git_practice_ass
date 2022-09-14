@@ -1,12 +1,11 @@
 // Problem 1 : Check whether a number is Prime or not
 
-let num=5;
-for(let i=0;i<num;i++)
+let N=5;
+let flag="Yes"
+for(let i=2;i<N;i++)
 {
-	if(num%i==0)
-		break;
+    if(N%i==0)
+        flag="No";
 }
-if(i==num)
-	console.log("Yes");
-else
-	console.log("No");
+
+console.log(flag);
